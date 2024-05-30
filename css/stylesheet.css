@@ -8,6 +8,8 @@
     font-family: "Inter", sans-serif;
 }
 
+
+
 body {
     justify-content: center;
     max-width: 1400px;
@@ -16,14 +18,151 @@ body {
 }
 
 nav {
-    height: 70px;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 100%;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    z-index: 98;
+    display: block;
+    background-color: #BF4C0C;
+    padding-left: 5%;
+    padding-top: 120px;
+    transition: 0.4s;
+    visibility: hidden;
+}
+
+.nav-box {
+    height: 100px;
+    display: flexbox;
+}
+
+nav.is-active {
+    left: 0;
+    visibility: visible;
+}
+
+nav a {
+    width: fit-content;
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-size:1.5rem ;
+    font-weight: 400;
+    transition: transform 0.4s; 
+    position: relative;
+}
+
+nav a:hover {
+    font-weight: 700;
+    font-size: 700;
+}
+
+.nav-container {
+    height: 100px;
     position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.nav-icon {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    width: 0;
+    height: 30px; 
+    background: url('/images/Vector.png') no-repeat left center;
+    background-size: contain;
+    margin-right: 10px;
+    transition: width 0.4s; 
+}
+
+nav a:hover .nav-icon {
+    width: 16px; 
+}
+
+nav a:hover span {
+    transform: translateX(20px); 
+    transition: transform 0.4s; 
+}
+
+
+.logo-frame {
+    margin: auto;
+    float: left;
+    width: auto;
+    height: 100%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.logo {
+    height: 65px;
+    margin: auto;
+}
+.logo-small {
+    height: 40px;
+}
+.logo2, .logo3 {
+    width: 0;
 }
 
 header {
    /* background-color: blanchedalmond;*/
     height: 100%;
     overflow: hidden;
+}
+
+
+.hamburger-frame {
+    height: 100%;
+    width: auto;
+    float: right;
+    display: flex;
+    margin-right: 5%;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 99;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #BF4C0C;
+    margin: 6px 0px;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+    background-color: #fff;
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+    background-color: #fff;
 }
 
 /*header images rotation*/
@@ -50,6 +189,10 @@ header {
     display: none;
     width: 100%;
     height: auto;
+}
+
+.imp-buffer {
+    height: 556px; 
 }
 
 
@@ -105,6 +248,10 @@ h1 {
 .h1-sec {
     margin-top: 350px;
 }
+
+
+
+
 
 h2 {
     font-family: "Inter", sans-serif;
@@ -208,6 +355,11 @@ h3 {
     display: block;
 }
 
+.text-block-wide {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .text-block p{
     font-size: 1rem;
     line-height: 1.25rem;
@@ -225,6 +377,17 @@ h3 {
     border-radius: 10px;
     width: 100%;
     height: auto;
+}
+
+.content-block-devide {
+    margin: 0 5% 0 5%;
+}
+
+.devider-block {
+    width: 60%;
+    padding: 3% 5% 3% 3%;
+    background-color: #FDE5D9;
+    border-radius: 10px;
 }
 
 /*-----Teaser abschnitt------*/
@@ -316,6 +479,15 @@ h3 {
 
 /* On screens that are 992px or less    577px - 992px*/
 @media screen and (max-width: 992px) {
+
+    .logo2 {
+        width: unset;
+    }
+
+    .logo1, .logo3 {
+        width: 0;
+    }
+
     header {
         height: 495px;
     }
@@ -333,6 +505,10 @@ h3 {
     }
     .header-img4 {
         display: none;
+    }
+
+    .imp-buffer {
+        height: 495px; 
     }
 
     footer {
@@ -400,6 +576,15 @@ h3 {
 
 /* On screens that are 576px or less  430 - 576px*/
 @media screen and (max-width: 576px) {
+
+    .logo3 {
+        width: unset;
+    }
+
+    .logo1, .logo2 {
+        width: 0;
+    }
+
     /*------dissable horizontal scroll------*/
     html, body {
         max-width: 100%;
@@ -423,6 +608,10 @@ h3 {
     }
     .header-img4 {
         display: none;
+    }
+
+    .imp-buffer {
+        height: 355px; 
     }
 
     footer {
@@ -493,6 +682,7 @@ h3 {
         margin-top: 250px;
     }
 
+
     h2 {
         margin-bottom: 5%;
     }
@@ -507,6 +697,9 @@ h3 {
         margin-top: 5%;
     }
 
+    .devider-block {
+        width: 100%;
+    }
 
     .img-block {
         display: none;
@@ -549,6 +742,10 @@ h3 {
     .header-img4 {
         /*background: url(/images/Frame\ 21.png);*/
         display: unset;
+    }
+
+    .imp-buffer {
+        height: 495px; 
     }
 
     .footer-link:hover {
@@ -608,6 +805,8 @@ h3 {
     .h1-sec {
         margin-top: 375px;
     }
+
+    
     
 
     .img-block {

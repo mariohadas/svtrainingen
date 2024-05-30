@@ -1,0 +1,47 @@
+/* control header and h1 position when no img is loaded*/
+
+header {
+    height: 400px;
+}
+
+.h1-imp {
+    margin-top: 200px;
+    color: #1F1235;
+}
+
+@media screen and (max-width: 992px) {
+
+    header {
+        height: 350px;
+    }
+
+    .h1-imp {
+        margin-top: 150px;
+    }
+    
+
+}
+
+@media screen and (max-width: 576px) {
+
+    header {
+        height: 300px;
+    }
+
+    .h1-imp {
+        margin-top: 125px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    header {
+        height: 200px;
+    }
+
+    .h1-imp {
+        margin-top: 100px;
+    }
+
+}
