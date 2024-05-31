@@ -75,7 +75,7 @@ nav a:hover {
     top: 6px;
     width: 0;
     height: 30px; 
-    background: url('/images/Vector.png') no-repeat left center;
+    background: url('/images/rz/icon/hover-icon.svg') no-repeat left center;
     background-size: contain;
     margin-right: 10px;
     transition: width 0.4s; 
@@ -100,11 +100,11 @@ nav a:hover span {
     margin-left: 5%;
 }
 
-.logo {
+.logo, .logo1, .logo2 {
     height: 65px;
     margin: auto;
 }
-.logo-small {
+.logo-small, .logo3 {
     height: 40px;
 }
 .logo2, .logo3 {
@@ -288,7 +288,7 @@ h3 {
 
 .container .clip.clip1 {
     /*background-color: red;*/
-    background: url(/images/Bild_05_test.png);
+    background: url(/images/rz/header/collage-frame1.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: left;
@@ -297,7 +297,7 @@ h3 {
 
 .container .clip.clip2 {
     /*background-color: blue;*/
-    background: url(/images/Bild_15_test.png);
+    background: url(/images/rz/header/collage-frame2.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
@@ -305,7 +305,7 @@ h3 {
 }
 .container .clip.clip3 {
     /*background-color: green;*/
-    background: url(/images/Frame\ 34.png);
+    background: url(/images/rz/header/collage-frame3.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: right;
@@ -474,6 +474,181 @@ h3 {
     margin-top: 3%;
 }
 
+.content-block-map {
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+.map-frame {
+    width: 65%;
+    border-radius: 10px;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    display: block;
+    position: relative;
+    margin-right: 25px;
+}
+
+.map {
+    max-height: 100%;
+    overflow-y: hidden;
+}
+
+.map img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlayframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    pointer-events: none; /* Ensure the overlays do not interfere with interaction */
+}
+
+.overlay-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure the overlays do not interfere with interaction */
+}
+
+.overlay-map1, .overlay-map2, .overlay-map3, .overlay-map4 {
+    visibility: hidden;
+
+}
+
+.overlay-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.is-active-map {
+    visibility: visible;
+}
+
+.legende-frame {
+    background-color: #FDE5D9;
+    float: right;
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+    height: 575px; /* Fixed height for the parent container */
+    overflow: hidden;
+}
+
+.legende-element {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.legende-element > div {
+    flex: 1;
+    overflow: hidden;
+    transition: flex 0.5s ease, height 0.5s ease;
+}
+
+.legende-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.legende-text-block h2 {
+    cursor: pointer;
+    width: 100%;
+    padding-right: 20%;
+}
+
+.legende-text-block p {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.devider {
+    width: 100%;
+    height: 2px;
+    max-height: 2px;
+    background-color: #BF4C0C;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.legende-text-block p span {
+    display: inline-block;
+    height: 30px;
+}
+
+.map-mobile-block {
+    display: none;
+}
+
+.hor-legende-container {
+    width: 100%;
+    padding: 0 5% 5% 5%;
+}
+
+.hor-legende-frame{
+    display: flex;
+    background-color: #FDE5D9;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+.hor-legende-element {
+    display: flex;
+    padding: 10px;
+}
+
+.hor-legende-img-container {
+    height: 100%;
+    display: flex;
+}
+
+.hor-legende-img-frame {
+    margin: auto 10px auto 0;
+        border-style: solid;
+    border-color: #BF4C0C;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.hor-legende-img-frame img {
+    margin: auto;
+    width: 30px;
+    height: auto;
+    
+}
+
+.hor-legende-text-container {
+    display: flex;
+}
+
+.hor-legende-text-container p {
+    margin: auto;
+}
+
 
 
 
@@ -531,7 +706,7 @@ h3 {
     
     .container .clip.clip1 {
         /*background-color: red;*/
-        background: url(/images/Bild_05_test_3.png);
+        background: url(/images/rz/header/collage-small-frame1.png);
         background-repeat: no-repeat;
         background-size:contain;
         background-position: left;
@@ -540,7 +715,7 @@ h3 {
     
     .container .clip.clip2 {
         /*background-color: blue;*/
-        background: url(/images/Bild_15_test_2.png);
+        background: url(/images/rz/header/collage-small-frame2.png);
         background-repeat: no-repeat;
         background-size:contain;
         background-position: center;
@@ -569,8 +744,31 @@ h3 {
         margin-bottom: 30px; 
     }
 
+    .map-frame {
+        width: 60%;
+    }
 
+    .legende-frame {
+        height:395px; /* Fixed height for the parent container */
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 
+    .legende-text-block h2 {
+        padding-right: 0;
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 0px;
+
+    }
+    .legende-text-block p {
+        font-size: 0.8rem;
+    }
+
+    .legende-text-block p span {
+        height: 20px;
+    }
+   
 }
 
 
@@ -714,6 +912,69 @@ h3 {
     .teaser-text {
         font-size: 5vw;
     }
+
+    .content-block-map {
+        display: none;
+    }
+
+    .map-mobile-block {
+        display: unset;
+    }
+
+
+    .map-mobile-frame {
+        width: 100%;
+        padding: 5%;
+        height: auto;
+
+    }
+
+    .map-mobile-container {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .map-mobile {
+        height: 100%;
+        width: auto;
+        overflow: auto;
+    }
+
+    .map-mobile-phone {
+        width: 100%;
+        display: none;
+    }
+
+    .legende-frame-mobile {
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 50px;
+    }
+
+    .legende-element-mobile {
+        background-color: #FDE5D9;
+        padding: 20px;
+        border-radius: 10px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .legende-text-block-mobile {
+        width: 50%;
+        margin: 0 auto 0 auto;
+    }
+
+    .legende-text-block-mobile p span {
+        height: 10px;
+        display: block;
+    }
+
+    .hor-legende-frame{
+        padding: 20px 10px 20px 10px;
+    }
+
+
+    
 }
 /* On screens that are 576px or less  0 - 430px*/
 @media screen and (max-width: 430px) {
@@ -836,6 +1097,34 @@ h3 {
         font-size: 8vw;
     }
 
+    .legende-element-mobile {
+        display: block;
+    }
     
+    .legende-text-block-mobile {
+        width: 80%;
+        margin-bottom: 30px;
+        margin-left: 0;
+
+    }
+
+    .map-mobile {
+        display: none;
+    }
+
+    .map-mobile-phone {
+        display: unset;
+    }
+    
+    .hor-legende-frame {
+        width: 100%;
+        display: block;
+    }
+
+    .hor-legende-element {
+        display: inline-flex;
+        width: 100%;
+    }
+
 
 }
