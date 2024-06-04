@@ -75,7 +75,7 @@ nav a:hover {
     top: 6px;
     width: 0;
     height: 30px; 
-    background: url('/images/rz/icon/hover-icon.svg') no-repeat left center;
+    background: url(../images/rz/icon/hover-icon.svg) no-repeat left center;
     background-size: contain;
     margin-right: 10px;
     transition: width 0.4s; 
@@ -288,7 +288,7 @@ h3 {
 
 .container .clip.clip1 {
     /*background-color: red;*/
-    background: url(/images/rz/header/collage-frame1.png);
+    background: url(../images/rz/header/collage-frame1.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: left;
@@ -297,7 +297,7 @@ h3 {
 
 .container .clip.clip2 {
     /*background-color: blue;*/
-    background: url(/images/rz/header/collage-frame2.png);
+    background: url(../images/rz/header/collage-frame2.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
@@ -305,7 +305,7 @@ h3 {
 }
 .container .clip.clip3 {
     /*background-color: green;*/
-    background: url(/images/rz/header/collage-frame3.png);
+    background: url(../images/rz/header/collage-frame3.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: right;
@@ -706,7 +706,7 @@ h3 {
     
     .container .clip.clip1 {
         /*background-color: red;*/
-        background: url(/images/rz/header/collage-small-frame1.png);
+        background: url(../images/rz/header/collage-small-frame1.png);
         background-repeat: no-repeat;
         background-size:contain;
         background-position: left;
@@ -715,7 +715,7 @@ h3 {
     
     .container .clip.clip2 {
         /*background-color: blue;*/
-        background: url(/images/rz/header/collage-small-frame2.png);
+        background: url(../images/rz/header/collage-small-frame2.png);
         background-repeat: no-repeat;
         background-size:contain;
         background-position: center;
