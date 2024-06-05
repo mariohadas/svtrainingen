@@ -1,6 +1,6 @@
 # SV Trainingen
 
-Zum richtigen Laden der Schriften ist eine aktive Internetverbindung nötig.
+
 
 Browserversion 
 Firefox 126.0.1 (64-Bit)
