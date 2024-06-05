@@ -1,6 +1,6 @@
 # SV Trainingen
 
-Neben dem lokalen Verzeichnis, ist die Webseite bis zum 28.6.2024  abrufbar unter http://mario.lsd.de/sv-trainingen/index.html
+Zum richtigen Laden der Schriften ist eine aktive Internetverbindung nötig.
 
 Browserversion 
 Firefox 126.0.1 (64-Bit)
